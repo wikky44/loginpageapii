@@ -1,6 +1,6 @@
-
-class LoginInitial extends LoginState {}
 part of 'login_bloc.dart';
+class LoginInitial extends LoginState {}
+
 
 abstract class LoginState extends Equatable {
   const LoginState();
@@ -9,7 +9,7 @@ abstract class LoginState extends Equatable {
   List<Object> get props => [];
 }
 
-class LoginInitial extends LoginState {}
+class LoginAccess extends LoginState {}
 
 class LoginLoading extends LoginState {}
 

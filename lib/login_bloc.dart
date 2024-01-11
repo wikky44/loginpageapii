@@ -20,7 +20,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
 
       try {
         final response = await http.post(
-          Uri.parse('https://respos.menuclub.uk'), // Replace with your mock API URL
+          Uri.parse('https://respos.menuclub.uk'),
           body: json.encode({
             'email': event.email,
             'password': event.password,
